@@ -1,0 +1,43 @@
+pack_name: scientific-workflow
+display_name: 科研工作流
+description: >
+  A Codex skill pack for scientific brainstorming, literature review,
+  statistical analysis, academic search, figure preparation, writing,
+  polishing, and reviewer-style evaluation.
+
+local_skills:
+  - name: scientific-workflow
+    role: Main router skill for scientific research workflows.
+
+upstream_skills:
+  - name: scientific-brainstorming
+    role: Research ideas, hypotheses, innovation points, and study design.
+    source: K-Dense-AI/scientific-agent-skills
+
+  - name: literature-review
+    role: Literature review, evidence synthesis, and research gap analysis.
+    source: K-Dense-AI/scientific-agent-skills
+
+  - name: statistical-analysis
+    role: Statistical analysis, experimental design, model selection, and result interpretation.
+    source: K-Dense-AI/scientific-agent-skills
+
+  - name: nature-academic-search
+    role: Academic search, DOI checking, and literature retrieval.
+    source: Yuan1z0825/nature-skills
+
+  - name: nature-figure
+    role: Scientific figure planning, refinement, and Nature-style visual presentation.
+    source: Yuan1z0825/nature-skills
+
+  - name: nature-writing
+    role: Manuscript writing, including abstract, introduction, results, discussion, and cover-letter style content.
+    source: Yuan1z0825/nature-skills
+
+  - name: nature-polishing
+    role: Academic polishing, clarity improvement, tone control, and non-native English refinement.
+    source: Yuan1z0825/nature-skills
+
+  - name: nature-reviewer
+    role: Reviewer-style evaluation, pre-submission critique, novelty assessment, and logic checking.
+    source: Yuan1z0825/nature-skills

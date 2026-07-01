@@ -1,0 +1,87 @@
+{
+  "pack_name": "scientific-workflow",
+  "display_name": "科研工作流",
+  "sources": [
+    {
+      "name": "scientific-brainstorming",
+      "repo": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "source_path": "skills/scientific-brainstorming",
+      "target_path": "scientific-brainstorming",
+      "license": "MIT",
+      "ref": "main",
+      "locked_commit": null
+    },
+    {
+      "name": "literature-review",
+      "repo": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "source_path": "skills/literature-review",
+      "target_path": "literature-review",
+      "license": "MIT",
+      "ref": "main",
+      "locked_commit": null
+    },
+    {
+      "name": "statistical-analysis",
+      "repo": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "source_path": "skills/statistical-analysis",
+      "target_path": "statistical-analysis",
+      "license": "MIT",
+      "ref": "main",
+      "locked_commit": null
+    },
+    {
+      "name": "_shared",
+      "repo": "https://github.com/Yuan1z0825/nature-skills.git",
+      "source_path": "skills/_shared",
+      "target_path": "_shared",
+      "license": "Apache-2.0",
+      "ref": "main",
+      "locked_commit": null
+    },
+    {
+      "name": "nature-academic-search",
+      "repo": "https://github.com/Yuan1z0825/nature-skills.git",
+      "source_path": "skills/nature-academic-search",
+      "target_path": "nature-academic-search",
+      "license": "Apache-2.0",
+      "ref": "main",
+      "locked_commit": null
+    },
+    {
+      "name": "nature-figure",
+      "repo": "https://github.com/Yuan1z0825/nature-skills.git",
+      "source_path": "skills/nature-figure",
+      "target_path": "nature-figure",
+      "license": "Apache-2.0",
+      "ref": "main",
+      "locked_commit": null
+    },
+    {
+      "name": "nature-writing",
+      "repo": "https://github.com/Yuan1z0825/nature-skills.git",
+      "source_path": "skills/nature-writing",
+      "target_path": "nature-writing",
+      "license": "Apache-2.0",
+      "ref": "main",
+      "locked_commit": null
+    },
+    {
+      "name": "nature-polishing",
+      "repo": "https://github.com/Yuan1z0825/nature-skills.git",
+      "source_path": "skills/nature-polishing",
+      "target_path": "nature-polishing",
+      "license": "Apache-2.0",
+      "ref": "main",
+      "locked_commit": null
+    },
+    {
+      "name": "nature-reviewer",
+      "repo": "https://github.com/Yuan1z0825/nature-skills.git",
+      "source_path": "skills/nature-reviewer",
+      "target_path": "nature-reviewer",
+      "license": "Apache-2.0",
+      "ref": "main",
+      "locked_commit": null
+    }
+  ]
+}
