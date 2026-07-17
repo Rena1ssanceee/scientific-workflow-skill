@@ -1,17 +1,26 @@
 pack_name: scientific-workflow
-display_name: 科研工作流
+display_name: Scientific Workflow
 description: >
   A Codex skill pack for scientific brainstorming, literature review,
   statistical analysis, academic search, figure preparation, writing,
-  polishing, and reviewer-style evaluation.
+  polishing, reviewer-style evaluation, and evidence-driven research planning.
 
 local_skills:
   - name: scientific-workflow
-    role: Main router skill for scientific research workflows.
+    role: >
+      Main router for ordinary scientific tasks and comprehensive
+      evidence-driven literature-survey-and-research-planning workflows.
+    local_modules:
+      - high-recall comprehensive literature-search protocol
+      - full-text evidence extraction
+      - project-specific data-situation audit
+      - candidate-direction evaluation
+      - v3-style report assembly
+      - final scientific quality control
 
 upstream_skills:
   - name: scientific-brainstorming
-    role: Research ideas, hypotheses, innovation points, and study design.
+    role: Research ideas, hypotheses, innovation points, and study design after evidence and data constraints are established.
     source: K-Dense-AI/scientific-agent-skills
 
   - name: literature-review
@@ -19,11 +28,11 @@ upstream_skills:
     source: K-Dense-AI/scientific-agent-skills
 
   - name: statistical-analysis
-    role: Statistical analysis, experimental design, model selection, and result interpretation.
+    role: Statistical analysis, data auditing, experimental design, model selection, and result interpretation.
     source: K-Dense-AI/scientific-agent-skills
 
   - name: nature-academic-search
-    role: Academic search, DOI checking, and literature retrieval.
+    role: Academic search, DOI checking, bibliographic verification, and literature retrieval.
     source: Yuan1z0825/nature-skills
 
   - name: nature-figure
@@ -31,7 +40,7 @@ upstream_skills:
     source: Yuan1z0825/nature-skills
 
   - name: nature-writing
-    role: Manuscript writing, including abstract, introduction, results, discussion, and cover-letter style content.
+    role: Manuscript and formal report writing, including abstract, introduction, results, discussion, and cover-letter style content.
     source: Yuan1z0825/nature-skills
 
   - name: nature-polishing

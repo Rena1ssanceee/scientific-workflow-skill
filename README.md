@@ -2,7 +2,26 @@
 
 A Codex skill pack installer for scientific research workflows.
 
-This repository installs a lightweight router skill named `scientific-workflow` and fetches selected third-party scientific skills from their original repositories.
+This repository installs a router skill named `scientific-workflow` and fetches selected third-party scientific skills from their original repositories.
+
+## Workflow modes
+
+The local router supports two modes:
+
+1. **Ordinary scientific workflow** for bounded tasks such as brainstorming, literature review, statistical analysis, figure planning, writing, polishing, or reviewer-style critique.
+2. **Evidence-driven literature survey and research planning** for projects that require comprehensive literature retrieval, uploaded full-text review, existing-data auditing, candidate-direction evaluation, and one final research plan.
+
+The second mode includes modular references and templates for:
+
+- high-recall, multi-source literature search and comprehensive master-list construction within a frozen scope;
+- full-text evidence extraction;
+- project-specific auditing of the actual data situation;
+- analytical-unit, dependency, chronology, and label verification when relevant;
+- candidate-direction selection;
+- v3-style formal reports;
+- evidence matrices;
+- figure and technical-route planning;
+- final scientific quality control.
 
 ## Included skills
 
@@ -14,7 +33,7 @@ From `K-Dense-AI/scientific-agent-skills`:
 
 From `Yuan1z0825/nature-skills`:
 
-- `_shared`
+- `nature-shared`
 - `nature-academic-search`
 - `nature-figure`
 - `nature-writing`
@@ -58,9 +77,10 @@ CODEX_SKILLS_DIR="$HOME/.codex/skills" ./install.sh
 This repository provides:
 
 1. A local router skill named `scientific-workflow`.
-2. An installation script for selected upstream scientific skills.
-3. A check script to verify whether the expected skills were installed.
-4. Manifest files that record the included skills and their upstream sources.
+2. Modular evidence-planning references and report templates.
+3. An installation script for selected upstream scientific skills.
+4. A check script to verify whether expected skills and local workflow files were installed.
+5. Manifest files that record included skills and upstream sources.
 
 It does not claim authorship of third-party skills.
 
@@ -68,7 +88,7 @@ It does not claim authorship of third-party skills.
 
 This repository is an installer and integration layer.
 
-The local files in this repository, including `install.sh`, `check.sh`, `README.md`, manifests, and the `scientific-workflow` router skill, are released under the license of this repository.
+The local files in this repository, including `install.sh`, `check.sh`, `README.md`, manifests, templates, references, and the `scientific-workflow` router skill, are released under the license of this repository.
 
 Third-party skills are fetched from their original repositories and remain under their original licenses. Please check the upstream repositories for their latest license terms:
 

@@ -58,7 +58,7 @@ copy_dir "$KDENSE_DIR/skills/literature-review" "literature-review"
 copy_dir "$KDENSE_DIR/skills/statistical-analysis" "statistical-analysis"
 
 echo "Installing Nature skills..."
-copy_dir "$NATURE_DIR/skills/_shared" "_shared"
+copy_dir "$NATURE_DIR/skills/nature-shared" "nature-shared"
 copy_dir "$NATURE_DIR/skills/nature-academic-search" "nature-academic-search"
 copy_dir "$NATURE_DIR/skills/nature-figure" "nature-figure"
 copy_dir "$NATURE_DIR/skills/nature-writing" "nature-writing"
