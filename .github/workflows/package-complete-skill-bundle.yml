@@ -10,13 +10,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Collect all skills
+        with:
+          path: scientific-workflow-skill
+      - name: Collect repositories and package
         run: |
           set -euo pipefail
-          mkdir -p bundle/skills
-          AGENTS_SKILLS_DIR="$PWD/bundle/skills" bash ./install.sh
-          cp -f README.md install.sh check.sh bundle/ 2>/dev/null || true
-          cp -R manifests bundle/ 2>/dev/null || true
+          git clone --depth 1 https://github.com/K-Dense-AI/scientific-agent-skills.git
+          git clone --depth 1 https://github.com/Yuan1z0825/nature-skills.git
+          mkdir -p bundle
+          mv scientific-workflow-skill bundle/
+          mv scientific-agent-skills bundle/
+          mv nature-skills bundle/
+          cat > bundle/CONTENTS.txt <<'TXT'
+          Complete source bundle for the scientific-workflow skill pack.
+
+          Included repositories:
+          - Rena1ssanceee/scientific-workflow-skill
+          - K-Dense-AI/scientific-agent-skills
+          - Yuan1z0825/nature-skills
+
+          The router's install.sh identifies the exact component skills used by the workflow.
+          TXT
           tar -czf scientific-workflow-all-skills.tar.gz -C bundle .
       - uses: actions/upload-artifact@v4
         with:
