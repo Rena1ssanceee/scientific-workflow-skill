@@ -1,0 +1,25 @@
+name: Package complete skill bundle
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect all skills
+        run: |
+          set -euo pipefail
+          mkdir -p bundle/skills
+          AGENTS_SKILLS_DIR="$PWD/bundle/skills" bash ./install.sh
+          cp -f README.md install.sh check.sh bundle/ 2>/dev/null || true
+          cp -R manifests bundle/ 2>/dev/null || true
+          tar -czf scientific-workflow-all-skills.tar.gz -C bundle .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: scientific-workflow-all-skills
+          path: scientific-workflow-all-skills.tar.gz
+          if-no-files-found: error
