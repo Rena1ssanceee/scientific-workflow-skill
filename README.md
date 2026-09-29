@@ -14,7 +14,7 @@ From `K-Dense-AI/scientific-agent-skills`:
 
 From `Yuan1z0825/nature-skills`:
 
-- `_shared`
+- `nature-shared`
 - `nature-academic-search`
 - `nature-figure`
 - `nature-writing`
