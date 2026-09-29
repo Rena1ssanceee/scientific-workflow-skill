@@ -16,7 +16,7 @@ skills_with_skill_md=(
 )
 
 shared_dirs=(
-  "_shared"
+  "nature-shared"
 )
 
 missing=0
